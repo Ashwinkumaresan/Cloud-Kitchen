@@ -1,0 +1,106 @@
+/* 
+Kitchen_page */
+.kitchen_page_ .image_kitchen{
+  background-image: url("kitchen.jpg");
+  width: 100wh;
+  height: 100vh;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  box-shadow: rgba(0, 0, 0, 100%) 0px -250px 360px -28px inset;
+}
+.item_display{
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  line-height: 0;
+ }
+.kitchen_page_ .image_kitchen h1{
+  font-size:larger ;
+  letter-spacing: 1.5px;
+  font-family: 'Merriweather';
+  color: var(--primary-2-color);
+}
+.kitchen_page_ .image_kitchen p{
+  font-size: 25px;
+}
+
+.kitchen_page_ button{
+  padding: 0px 12px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  fill: var(--text-color);
+  background: transparent;
+  position: absolute;
+  right: 5%;
+}
+.kitchen_page_ button:hover{
+  fill: var(--primary-button-color);
+}
+@media only screen and (max-width:576px){
+  .kitchen_page_ .image_kitchen h1{
+      font-size:45px;
+  }
+  .kitchen_page_ .image_kitchen p{
+      font-size: 20px;
+  }
+}
+
+
+
+  
+  
+  /* Kitchen deatils changing popup */
+  .popup_kitchen{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(49, 49, 49, 0.5) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup_main_form{
+    width: 80%;
+    height: 80vh;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  .popup_main_form input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: var(--text-color);
+    margin: 05px 0;
+  }
+  .popup_main_form input:hover{
+    border-bottom: 2px solid var(--primary-button-color);
+  }
+  .popup_main_form label{
+    color: var(--primary-2-color);
+    margin-top: 10px;
+  }
+  .popup_main_form button{
+    background-color: var(--primary-button-color);
+    outline: none;
+    border: 2px solid var(--primary-button-color);
+    padding: 5px 20px ;
+    color: var(--text-color);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .popup_main_form button:hover{
+    border: 2px solid var(--primary-button-color);
+    background: transparent;
+    color: var(--primary-2-color);
+  }

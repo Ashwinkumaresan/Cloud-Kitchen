@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    background-color: #F6F2EB;
+}
+/* Kitchen sign in */
+.kitchen_sign_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.kitchen_sign_in h1{
+    font-size: 50px;
+    font-family: 'Merriweather';
+    padding: 20px;
+}
+.kitchen_sign_in h1 span{
+    color:#800020 ;
+    font-family: 'Merriweather';
+}
+.kitchen_sign_in input{
+    width: 100vw;
+    margin: 20px 0;
+    padding: 20px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom:2px solid white ;
+    background: transparent;
+}
+.kitchen_sign_in input::placeholder{
+    font-size: 20px;
+}
+.kitchen_sign_in label{
+    font-size: 20px;
+    color: #898989;
+    padding: 20px 0px 0px 20px;
+}
+.kitchen_sign_in input[type='file']{
+    border-bottom: none;
+    padding: 0px 20px;
+}
+.kitchen_sign_in textarea{
+    width: 100vw;
+    margin: 20px 0;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-bottom:2px solid white ;
+    background: transparent;
+}
+.kitchen_sign_in textarea::placeholder{
+    font-size: 20px;
+}
+.kitchen_sign_in button{
+    padding: 10px 30px;
+    font-size: larger;
+    outline: none;
+    border: none;
+    background-color: #D4AF37;
+    color: white;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+
