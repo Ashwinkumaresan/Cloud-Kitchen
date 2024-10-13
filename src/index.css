@@ -7,6 +7,7 @@
 }
 :root{
   --primary-color:#0A0F29;
+  --primary-2-color:#E6C370;
   --secondary-color:#800020;
   --primary-button-color:#D4AF37;
   --text-color:white;
@@ -104,6 +105,11 @@ header .nav-btn{
     font-size: 1.5rem;
   }
 }
+@media only screen and (max-width: 700px){
+  Header h3{
+    font-size: 30px;
+  }
+}
 
 
 
@@ -160,6 +166,11 @@ header .nav-btn{
     }
 }
 
+/* To stop scrolling while popup open */
+.active_modal{
+  overflow-y: hidden;  
+}
+
 /* popup_login */
 .popup_login{
   position: absolute;
@@ -214,7 +225,7 @@ header .nav-btn{
   letter-spacing: 3px;
 }
 .home_kitchen h1 span{
-  color: #E6C370;
+  color: var(--primary-2-color);
 }
 .popup_para{
   font-size: 20px;
@@ -230,6 +241,10 @@ header .nav-btn{
   color: white;
   background-color: var(--primary-button-color);
   margin-bottom: 15px;
+}
+.home_kitchen button a{
+  text-decoration: none;
+  color: var(--text-color);
 }
 .sign_up_para{
   text-decoration: none;
@@ -282,6 +297,9 @@ header .nav-btn{
   .business{
     padding: 4px 20px;
     font-size: 10px;
+  }
+  .home_kitchen{
+    border-radius: 20px 20px 0px 0px;
   }
   .popup_para{
     font-size: 15px;

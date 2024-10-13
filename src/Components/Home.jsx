@@ -1,7 +1,19 @@
 import { useState } from "react"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+
 export const Home = () => {
 const[openPopup, setOpenPopup]=useState(false)
+
+// To stop scrolling while popup open index-168
+if(openPopup)
+{
+  document.body.classList.add('active_modal');
+}
+else
+{
+  document.body.classList.remove('active_modal');
+}
 
   return (
     <>
@@ -11,6 +23,8 @@ const[openPopup, setOpenPopup]=useState(false)
             <button onClick={()=> setOpenPopup(true)}>Order now</button>
         </div>
     </div>
+    
+
     {
       openPopup &&
     <div className="popup_login">
@@ -22,8 +36,8 @@ const[openPopup, setOpenPopup]=useState(false)
               <p className="business">BUSINESS</p>
               <h1>For <span>Kitchen</span></h1>
               <p className="popup_para">Efficient platform for cloud kitchens to manage orders and connect with customers easily.</p>
-              <button>Login</button>
-              <p>Don't  have account? <span><a href="#" className="sign_up_para">Sign up</a></span></p>
+              <button><a href="#">Login</a> </button>
+              <p>Don't  have account? <span><a href="/kitchen-sign-in" className="sign_up_para">Sign up</a></span></p>
             </div>
           </div>
           <div className="col" style={{padding:0}}>
