@@ -9,7 +9,7 @@ export const Navbar = () => {
     }
   return (
   <header>
-    <h3>Heavenly Kitchen</h3>
+    <h3>Heavenly Vaults</h3>
     <nav ref={navRef}>
         <a href="/#">Home</a>
         <a href="/#">About Us</a>

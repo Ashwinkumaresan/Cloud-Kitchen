@@ -36,7 +36,7 @@ else
               <p className="business">BUSINESS</p>
               <h1>For <span>Kitchen</span></h1>
               <p className="popup_para">Efficient platform for cloud kitchens to manage orders and connect with customers easily.</p>
-              <button><a href="#">Login</a> </button>
+              <button><a href="/kitchen-login">Login</a> </button>
               <p>Don't  have account? <span><a href="/kitchen-sign-in" className="sign_up_para">Sign up</a></span></p>
             </div>
           </div>
