@@ -11,11 +11,11 @@ export const Navbar = () => {
   <header>
     <h3>Heavenly Vaults</h3>
     <nav ref={navRef}>
-        <a href="/#">Home</a>
-        <a href="/#">About Us</a>
-        <a href="/#">Latest</a>
-        <a href="/#">Cart</a>
-        <a href="/#">Timed Access</a>
+        <a href="/#" onClick={showNavbar}>Home</a>
+        <a href="/#About" onClick={showNavbar}>About Us</a>
+        <a href="/#" onClick={showNavbar}>Latest</a>
+        <a href="/#" onClick={showNavbar}>Cart</a>
+        <a href="/#" onClick={showNavbar}>Timed Access</a>
         <button onClick={showNavbar} className="nav-btn nav-cls-btn">
             <FaTimes/>
         </button>
