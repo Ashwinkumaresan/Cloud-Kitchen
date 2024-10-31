@@ -44,7 +44,6 @@ body{
 }
 .kitchen_sign_in textarea{
     width: 100vw;
-    margin: 20px 0;
     padding: 20px;
     outline: none;
     border: none;
@@ -66,3 +65,23 @@ body{
 }
 
 
+@media  only screen and (max-width: 600px) {
+    .kitchen_sign_in h1{
+        font-size: 35px;
+    }    
+    .kitchen_sign_in  label{
+        font-size: 15px;
+    }
+    .kitchen_sign_in input::placeholder{
+        font-size: 15px;
+    }
+    .kitchen_sign_in textarea::placeholder{
+        font-size: 15px;
+    }
+    .kitchen_sign_in input{
+        padding: 10px;
+    }
+    .kitchen_sign_in textarea{
+        padding: 10px;
+    }
+}

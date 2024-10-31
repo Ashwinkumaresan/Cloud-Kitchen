@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 /* 
 Kitchen_page */
 .kitchen_page_ .image_kitchen{
@@ -41,6 +44,29 @@ Kitchen_page */
 .kitchen_page_ button:hover{
   fill: var(--primary-button-color);
 }
+
+/* kitchen_page_next_session */
+.sticky{
+  position: sticky;
+  top: 0;
+  margin: 30px 0px 5px 30px;
+}
+.sticky h2{
+  font-size: 3.5rem;
+  font-family: 'Merriweather';
+}
+.sticky h2 span{
+  color: var(--secondary-color);
+  font-family: 'Lobster';
+}
+.kitchen_page_next_session{
+  width: 100%;
+  height: 200vh;
+}
+.sticky .break{
+  display: none;
+}
+
 @media only screen and (max-width:576px){
   .kitchen_page_ .image_kitchen h1{
       font-size:45px;
@@ -48,6 +74,15 @@ Kitchen_page */
   .kitchen_page_ .image_kitchen p{
       font-size: 20px;
   }
+  .sticky h2{
+    font-size: 2.5rem;
+    }
+    .sticky h2 span{
+      font-size: 3rem;
+    }
+    .sticky .break{
+      display: block   ;
+    }
 }
 
 
@@ -58,7 +93,7 @@ Kitchen_page */
   .popup_kitchen{
     position: absolute;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     backdrop-filter: blur(5px);
     background-color: rgba(49, 49, 49, 0.5) ;
