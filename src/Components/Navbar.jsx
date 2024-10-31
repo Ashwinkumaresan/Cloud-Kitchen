@@ -15,7 +15,7 @@ export const Navbar = () => {
         <a href="/#About" onClick={showNavbar}>About Us</a>
         <a href="/#" onClick={showNavbar}>Latest</a>
         <a href="/#" onClick={showNavbar}>Cart</a>
-        <a href="/#" onClick={showNavbar}>Timed Access</a>
+        <a href="/#" onClick={showNavbar}>Plan Access</a>
         <button onClick={showNavbar} className="nav-btn nav-cls-btn">
             <FaTimes/>
         </button>

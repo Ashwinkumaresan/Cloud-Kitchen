@@ -2,7 +2,7 @@ import "./../style/Kitchen_sign_in.css"
 export const Sign_in_kitchen = () => {
   return (
     <>
-    <div className="kitchen_sign_in">
+    {/* <div className="kitchen_sign_in">
         <h1>Register your <span>kitchen</span></h1>
         <div className="form">
             <form >
@@ -17,7 +17,12 @@ export const Sign_in_kitchen = () => {
             </form>
         </div>
                     <a href="/kitchen-page"><button>Sign in</button></a>
-    </div>
+    </div> */}
+
+        <div className="signinform">
+            
+        </div>
+
     </>
     )
 }
